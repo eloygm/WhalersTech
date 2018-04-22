@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="grupoc_prScouts_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>grupoc.prscouts.Administrador</class>
+    <class>grupoc.prscouts.Asistentes_Evento</class>
+    <class>grupoc.prscouts.Comentario_evento</class>
+    <class>grupoc.prscouts.Documentacion</class>
+    <class>grupoc.prscouts.Educando</class>
+    <class>grupoc.prscouts.Evento</class>
+    <class>grupoc.prscouts.Pago</class>
+    <class>grupoc.prscouts.Promesa</class>
+    <class>grupoc.prscouts.Scout</class>
+    <class>grupoc.prscouts.Seccion</class>
+    <class>grupoc.prscouts.Usuario</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="javax.persistence.jdbc.user" value="app"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="app"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.scripts.action" value="create"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="scouts.ddl"/>
+    </properties>
+  </persistence-unit>
+</persistence>
