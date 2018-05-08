@@ -1,3 +1,5 @@
 /prScoutsJSF/nbproject/private/
 /prScoutsJSF/dist/
 /prScoutsJSF/build/
+*.properties
+*.xml
