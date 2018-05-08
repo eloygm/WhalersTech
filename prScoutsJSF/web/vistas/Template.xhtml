@@ -28,16 +28,16 @@
                         <b:navLink value="Unidad" href="#"></b:navLink>
                         <b:navLink value="Clan" href="#"></b:navLink>
                         <b:navLink value="Scouters" href="#"></b:navLink>
-     
+
                     </b:dropMenu>
                 </b:navbarLinks>
- 
-  <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
-            <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
                 <b:navbarLinks pull="right" styleClass="hidden-xs">
-    
+
                 </b:navbarLinks>
-            
+
             </b:navBar>
         </div>
         <div>
@@ -49,7 +49,22 @@
             </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
+            <b:navBar  fluid="true" position="bottom" sticky="false" id="navFootP" >
+                <b:navbarLinks id="footlinks">
+                    <b:navLink value="¿Quiénes somos?" href="#" id="footlinks" ></b:navLink>
+                    <b:navLink value="Facebook" href="#" icon-awesome="fa-facebook-square"></b:navLink>
+                    <b:navLink value="WhalersTech" href="#"></b:navLink>
+                    <b:navLink value="ASDA" href="http://www.scoutsdeandalucia.org/"></b:navLink>
+                    <b:navLink value="ASDE" href="https://scout.es/"></b:navLink>
+
+                </b:navbarLinks>
+
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                <b:navbarLinks pull="right" styleClass="hidden-xs">
+
+                </b:navbarLinks>
+            </b:navBar>
         </div>
 
     </h:body>
