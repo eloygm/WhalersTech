@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="stylesheet" type="text/css" href="../resources/css/plantillacss.css" media="screen" />
+
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <b:navBar brand="Grupo Scout 39 Santo Ángel" brandHref="#" fluid="true">
+                <b:navbarLinks>
+                    <b:navLink value="Inicio" href="#"></b:navLink>
+                    <b:navLink value="Iniciar Sesión" href="#"></b:navLink>
+                    <b:navLink value="Apúntate" href="#"></b:navLink>
+                    <b:dropMenu value="Grupos" iconAwesome="">
+                        <b:navLink value="Castores" href="#"></b:navLink>
+                        <b:navLink value="Manada" href="#"></b:navLink>
+                        <b:navLink value="Tropa" href="#"></b:navLink>
+                        <b:navLink value="Unidad" href="#"></b:navLink>
+                        <b:navLink value="Clan" href="#"></b:navLink>
+                        <b:navLink value="Scouters" href="#"></b:navLink>
+
+                    </b:dropMenu>
+                </b:navbarLinks>
+
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                <b:navbarLinks pull="right" styleClass="hidden-xs">
+
+                </b:navbarLinks>
+
+            </b:navBar>
+        </div>
+        <div>
+            <div id="left">
+                <ui:insert name="left">Left</ui:insert>
+            </div>
+            <div id="content" class="left_content">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+        </div>
+        <div id="bottom">
+            <b:navBar  fluid="true" position="bottom" sticky="false" id="navFootP" >
+                <b:navbarLinks id="footlinks">
+                    <b:navLink value="¿Quiénes somos?" href="#" id="footlinks" ></b:navLink>
+                    <b:navLink value="Facebook" href="#" icon-awesome="fa-facebook-square"></b:navLink>
+                    <b:navLink value="WhalersTech" href="#"></b:navLink>
+                    <b:navLink value="ASDA" href="http://www.scoutsdeandalucia.org/"></b:navLink>
+                    <b:navLink value="ASDE" href="https://scout.es/"></b:navLink>
+
+                </b:navbarLinks>
+
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                <b:navbarLinks pull="right" styleClass="hidden-xs">
+
+                </b:navbarLinks>
+            </b:navBar>
+        </div>
+
+    </h:body>
+
+</html>
