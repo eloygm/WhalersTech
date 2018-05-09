@@ -8,7 +8,7 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        
+
         <link rel="stylesheet" type="text/css" href="../resources/css/plantillacss.css" media="screen" />
 
         <title>Facelets Template</title>
@@ -50,22 +50,14 @@
             </div>
         </div>
         <div id="bottom">
-            <b:navBar  fluid="true" position="bottom" sticky="false" id="navFootP" >
-                <b:navbarLinks id="footlinks">
-                    <b:navLink value="¿Quiénes somos?" href="#" id="footlinks" ></b:navLink>
-                    <b:navLink value="Facebook" href="#" icon-awesome="fa-facebook-square"></b:navLink>
-                    <b:navLink value="WhalersTech" href="#"></b:navLink>
-                    <b:navLink value="ASDA" href="http://www.scoutsdeandalucia.org/"></b:navLink>
-                    <b:navLink value="ASDE" href="https://scout.es/"></b:navLink>
-
-                </b:navbarLinks>
-
-                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
-                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
-                <b:navbarLinks pull="right" styleClass="hidden-xs">
-
-                </b:navbarLinks>
-            </b:navBar>
+            <footer>
+                <p id="footer">Copyright ©2018. Grupo Scout 39 Santo Angel - Málaga
+                    <a href="#" id="footerLink">¿Quiénes somos? </a>
+                    <a href="#" id="footerLink"> Facebook</a>
+                    <a href="#" id="footerLink"> WhalersTech </a>
+                    <a href="http://www.scoutsdeandalucia.org/" id="footerLink"> ASDA </a>
+                    <a href="https://scout.es/" id="footerLink"> ASDE </a></p>
+            </footer>
         </div>
 
     </h:body>
