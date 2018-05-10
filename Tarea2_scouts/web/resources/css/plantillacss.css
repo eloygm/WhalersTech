@@ -15,10 +15,6 @@ body {
     margin: 10px;
 }
 
-
-#top1{
-    padding-bottom: 5em;
-}
 footer{
     background-color: black;
     position: fixed;
@@ -28,7 +24,11 @@ footer{
     height: 35px;
     text-align: center;
 }
-#bottom{
-    padding-top: 5em;
-    margin-left: 10em;
+#footer{
+    color: white;
+}
+
+
+#top{
+    padding-bottom: 5em;
 }
