@@ -3,6 +3,7 @@
 /prScoutsJSF/build/
 <<<<<<< HEAD
 *.properties
+*.xml
 =======
 prScoutsJSF/nbproject/private/private.properties
 >>>>>>> d93d04262c289f28a79b940caf612276dd8da3a0
@@ -10,6 +11,4 @@ prScoutsJSF/nbproject/private/private.properties
 /Tarea2_scouts/build/
 /Tarea2_scouts/dist/
 *.properties
-*.properties
-*.xml
-/Tarea2_scouts/nbproject/private/
+prScoutsJSF/nbproject/private/private.xml
