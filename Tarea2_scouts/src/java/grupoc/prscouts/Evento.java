@@ -57,6 +57,20 @@ public class Evento implements Serializable {
     @OneToMany(mappedBy = "id_evento")
     private List<Asistentes_Evento> asistentes_evento;
 
+    public Evento(TipoEvento tipoEvento, Date fechaInicio, Date fechaFin, String Imagen, String titulo, String descripcion, Seccion seccion, List<Pago> createdByPago, List<Comentario_evento> comentario_evento, List<Asistentes_Evento> asistentes_evento) {
+        this.tipoEvento = tipoEvento;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.Imagen = Imagen;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.seccion = seccion;
+        this.createdByPago = createdByPago;
+        this.comentario_evento = comentario_evento;
+        this.asistentes_evento = asistentes_evento;
+    }
+
+    
     public TipoEvento getTipoEvento() {
         return tipoEvento;
     }

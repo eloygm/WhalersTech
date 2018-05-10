@@ -48,6 +48,17 @@ public class Seccion implements Serializable {
     @JoinColumn(name = "fk_educando", nullable = false)
     private List<Educando> educando;
 
+    public Seccion(String nombre, Integer Edad_Minima, Integer Edad_Maxima, Double cuota, List<Evento> evento, List<Scout> scout, List<Educando> educando) {
+        this.nombre = nombre;
+        this.Edad_Minima = Edad_Minima;
+        this.Edad_Maxima = Edad_Maxima;
+        this.cuota = cuota;
+        this.evento = evento;
+        this.scout = scout;
+        this.educando = educando;
+    }
+
+    
     public String getNombre() {
         return nombre;
     }

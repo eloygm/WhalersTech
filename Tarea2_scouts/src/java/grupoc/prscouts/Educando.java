@@ -6,6 +6,7 @@
 package grupoc.prscouts;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,6 +38,28 @@ public class Educando extends Usuario implements Serializable {
     @ManyToOne 
     private Seccion seccion;
 
+    public Educando(String DNI_tutor, String nombre_tutor, String apellido1_tutor, String apellido2_tutor, Seccion seccion) {
+        this.DNI_tutor = DNI_tutor;
+        this.nombre_tutor = nombre_tutor;
+        this.apellido1_tutor = apellido1_tutor;
+        this.apellido2_tutor = apellido2_tutor;
+        this.seccion = seccion;
+    }
+
+    public Educando(String DNI_tutor, String nombre_tutor, String apellido1_tutor, String apellido2_tutor, Seccion seccion, String nombre, String apellido1, String apellido2, String contrasena, String DNI, Date fecha_nacimiento, Date fecha_alta) {
+        super(nombre, apellido1, apellido2, contrasena, DNI, fecha_nacimiento, fecha_alta);
+        this.DNI_tutor = DNI_tutor;
+        this.nombre_tutor = nombre_tutor;
+        this.apellido1_tutor = apellido1_tutor;
+        this.apellido2_tutor = apellido2_tutor;
+        this.seccion = seccion;
+    }
+
+ 
+
+
+    
+    
     public String getDNI_tutor() {
         return DNI_tutor;
     }

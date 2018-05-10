@@ -65,6 +65,18 @@ public class Pago implements Serializable {
     @JoinColumn(name = "fk_id_scout", nullable = true)
     private Scout   id_scout;
 
+    public Pago(Double importe, Date f_emision, Date h_emision, Date f_validacion, EstadoPago estadoPago, Evento cod_evento, Educando id_educando, Scout id_scout) {
+        this.importe = importe;
+        this.f_emision = f_emision;
+        this.h_emision = h_emision;
+        this.f_validacion = f_validacion;
+        this.estadoPago = estadoPago;
+        this.cod_evento = cod_evento;
+        this.id_educando = id_educando;
+        this.id_scout = id_scout;
+    }
+    
+    
     public Long getId_pago() {
         return id_pago;
     }

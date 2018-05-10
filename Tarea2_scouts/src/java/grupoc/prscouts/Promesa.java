@@ -36,6 +36,13 @@ public class Promesa implements Serializable {
     @ManyToOne
     private Educando educando;
 
+    public Promesa(String promesa, Date fecha_promesa, Educando educando) {
+        this.promesa = promesa;
+        this.fecha_promesa = fecha_promesa;
+        this.educando = educando;
+    }
+    
+    
     public Long getId() {
         return id;
     }

@@ -50,6 +50,14 @@ public class Comentario_evento implements Serializable {
     @JoinColumn(name = "fk_evento", nullable = false)
     private Evento evento;
 
+    public Comentario_evento(String Texto, Date Fecha, Usuario usuario, Evento evento) {
+        this.Texto = Texto;
+        this.Fecha = Fecha;
+        this.usuario = usuario;
+        this.evento = evento;
+    }
+
+    
     public Long getId() {
         return id_comentario;
     }

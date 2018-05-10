@@ -34,9 +34,17 @@ public class Scout extends Usuario implements Serializable {
     private List<Pago> pagos;
     @ManyToOne 
     private Seccion seccion;
+
+    public Scout(Date fecha_titulo, boolean coordinador, Seccion seccion) {
+        this.fecha_titulo = fecha_titulo;
+        this.coordinador = coordinador;
+        this.seccion = seccion;
+    }
+
+    
             
 
-
+    
     public Date getFecha_titulo() {
         return fecha_titulo;
     }

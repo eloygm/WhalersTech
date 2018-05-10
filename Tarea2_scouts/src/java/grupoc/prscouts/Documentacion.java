@@ -47,6 +47,18 @@ public class Documentacion implements Serializable {
     private Date Fecha_Validacion;
     private String Ruta;
 
+    public Documentacion(Usuario createdByUsuario, EstadoDocumentacion estado, String nombreFichero, TiposDocumento tipo_Documentacion, Date Fecha_subida, Double Tam_byte, Date Fecha_Validacion, String Ruta) {
+        this.createdByUsuario = createdByUsuario;
+        this.estado = estado;
+        this.nombreFichero = nombreFichero;
+        this.tipo_Documentacion = tipo_Documentacion;
+        this.Fecha_subida = Fecha_subida;
+        this.Tam_byte = Tam_byte;
+        this.Fecha_Validacion = Fecha_Validacion;
+        this.Ruta = Ruta;
+    }
+
+    
     public Long getId() {
         return id_documento;
     }

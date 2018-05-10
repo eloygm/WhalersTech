@@ -57,7 +57,23 @@ public class Usuario implements Serializable {
     @OneToMany
     private List<Comentario_evento> comentarios;
 
+    public Usuario() {
+    }
+
+    public Usuario(String nombre, String apellido1, String apellido2, String contrasena, String DNI, Date fecha_nacimiento, Date fecha_alta) {
+        this.nombre = nombre;
+        this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
+        this.contrasena = contrasena;
+        this.DNI = DNI;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.fecha_alta = fecha_alta;
+    }
+
+    
+
    
+    
     public Long getId() {
         return id_usuario;
     }

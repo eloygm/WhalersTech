@@ -37,6 +37,14 @@ public class Asistentes_Evento implements Serializable {
     @JoinColumn(name = "fk_id_evento", nullable = false)
     private Evento id_evento;
 
+    public Asistentes_Evento(Usuario id_usuario, Evento id_evento) {
+        this.id_usuario = id_usuario;
+        this.id_evento = id_evento;
+    }
+
+    
+    
+    
     public Usuario getId_usuario() {
         return id_usuario;
     }
