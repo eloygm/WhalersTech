@@ -8,7 +8,7 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+        
         <link rel="stylesheet" type="text/css" href="../resources/css/plantillacss.css" media="screen" />
 
         <title>Facelets Template</title>
@@ -17,46 +17,55 @@
     <h:body>
 
         <div id="top">
-            <ui:insert name="top">
-                <b:navBar brand="Grupo Scout 39 Santo Ángel" brandHref="#" fluid="true">
-                    <b:navbarLinks>
-                        <b:navLink value="Inicio" href="#"></b:navLink>
-                        <b:navLink value="Iniciar Sesión" href="#"></b:navLink>
-                        <b:navLink value="Apúntate" href="#"></b:navLink>
-                        <b:dropMenu value="Grupos" iconAwesome="">
-                            <b:navLink value="Castores" href="#"></b:navLink>
-                            <b:navLink value="Manada" href="#"></b:navLink>
-                            <b:navLink value="Tropa" href="#"></b:navLink>
-                            <b:navLink value="Unidad" href="#"></b:navLink>
-                            <b:navLink value="Clan" href="#"></b:navLink>
-                            <b:navLink value="Scouters" href="#"></b:navLink>
+            <b:navBar brand="Grupo Scout 39 Santo Ángel" brandHref="#" fluid="true">
+                <b:navbarLinks>
+                    <b:navLink value="Inicio" href="#"></b:navLink>
+                    <b:navLink value="Iniciar Sesión" href="#"></b:navLink>
+                    <b:navLink value="Apúntate" href="#"></b:navLink>
+                    <b:dropMenu value="Grupos" iconAwesome="">
+                        <b:navLink value="Castores" href="#"></b:navLink>
+                        <b:navLink value="Manada" href="#"></b:navLink>
+                        <b:navLink value="Tropa" href="#"></b:navLink>
+                        <b:navLink value="Unidad" href="#"></b:navLink>
+                        <b:navLink value="Clan" href="#"></b:navLink>
+                        <b:navLink value="Scouters" href="#"></b:navLink>
 
-                        </b:dropMenu>
-                    </b:navbarLinks>
+                    </b:dropMenu>
+                </b:navbarLinks>
 
-                    <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
-                    <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
-                    <b:navbarLinks pull="right" styleClass="hidden-xs">
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                <b:navbarLinks pull="right" styleClass="hidden-xs">
 
-                    </b:navbarLinks>
+                </b:navbarLinks>
 
-                </b:navBar>
-            </ui:insert>
+            </b:navBar>
         </div>
-        <div id="content" class="center_content">
-            <ui:insert name="content"></ui:insert>
+        <div>
+            <div id="left">
+                <ui:insert name="left">Left</ui:insert>
+            </div>
+            <div id="content" class="left_content">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom">
-                <footer>
-                    <p id="footer">Copyright ©2018. Grupo Scout 39 Santo Angel - Málaga
-                        <a href="#" id="footerLink">¿Quiénes somos? </a>
-                        <a href="#" id="footerLink"> Facebook</a>
-                        <a href="#" id="footerLink"> WhalersTech </a>
-                        <a href="http://www.scoutsdeandalucia.org/" id="footerLink"> ASDA </a>
-                        <a href="https://scout.es/" id="footerLink"> ASDE </a></p>
-                </footer>
-            </ui:insert>
+            <b:navBar  fluid="true" position="bottom" sticky="false" id="navFootP" >
+                <b:navbarLinks id="footlinks">
+                    <b:navLink value="¿Quiénes somos?" href="#" id="footlinks" ></b:navLink>
+                    <b:navLink value="Facebook" href="#" icon-awesome="fa-facebook-square"></b:navLink>
+                    <b:navLink value="WhalersTech" href="#"></b:navLink>
+                    <b:navLink value="ASDA" href="http://www.scoutsdeandalucia.org/"></b:navLink>
+                    <b:navLink value="ASDE" href="https://scout.es/"></b:navLink>
+
+                </b:navbarLinks>
+
+                <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+                <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+                <b:navbarLinks pull="right" styleClass="hidden-xs">
+
+                </b:navbarLinks>
+            </b:navBar>
         </div>
 
     </h:body>
