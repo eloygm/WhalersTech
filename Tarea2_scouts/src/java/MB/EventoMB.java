@@ -49,9 +49,7 @@ public class EventoMB {
         usuario = new Usuario("PEPE", "CONTRERAS", "FUENTES", "NOSESABEULIO", "23445678T", fecha, fecha);
         nombreU = usuario.getNombre()+" "+usuario.getApellido1()+" "+usuario.getApellido2();
         comen = new Comentario_evento(comentario, fecha, usuario, ev);
-        nombreE = ("Excursión a la escuela");
-        descripcionE = "El próximo dia iremos a la escuela para tener un almuerzo todos los grupo para conocernos mejor.";
-        fotoEv =("./resources/images/2017-05-18.jpg");
+        
         
     }
     
@@ -102,6 +100,9 @@ public class EventoMB {
 
     public void setEv(Evento ev) {
         this.ev = ev;
+        this.nombreE = ev.getTitulo();
+        this.descripcionE = ev.getDescripcion();
+        this.fotoEv = getFotoEv();
     }
     
     
