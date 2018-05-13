@@ -37,7 +37,7 @@ public class ControlAutorizacion implements Serializable {
         // Si el usuario es un usuario normal debe devolver la página normal.xhtml
         if(getUsuario() instanceof Administrador){
             
-           return "admin.xhtml";
+           return "adminInicio.xhtml";
             
         } else if(getUsuario() instanceof Usuario){
             return "indexl.xhtml";
