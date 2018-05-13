@@ -1,3 +1,5 @@
+package MB;
+
 import grupoc.prscouts.Evento;
 import grupoc.prscouts.TipoEvento;
 import java.io.Serializable;
