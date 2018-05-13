@@ -43,7 +43,7 @@ public class usuario_mb {
     private List<Usuario> users;
     
      public usuario_mb() {
-        users=new ArrayList();
+        users=new ArrayList<Usuario>();
         autoincrementado = 0;
        
     }
@@ -57,7 +57,7 @@ public class usuario_mb {
    
    
  
-    public String crearUsuario() {
+    public void crearUsuario() {
       
         FacesContext.getCurrentInstance().addMessage(null,
          new FacesMessage(nombre + " " + apellido1 + " registrado correctamente"));
@@ -76,11 +76,8 @@ public class usuario_mb {
         nuevo.setFecha_nacimiento(fecha_nacimiento);
         
         
-       users.add(nuevo);
+       users.add(nuevo);       
        
-        return null;
-       
-     
         }
     
     public String updateUsuario(){
@@ -219,8 +216,9 @@ public class usuario_mb {
     public void setUsers(List<Usuario> users) {
         this.users = users;
     }
-
-   
     
+    public void deleteUser(Usuario us){
+        
+    }    
     
 }
