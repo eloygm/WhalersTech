@@ -39,6 +39,14 @@ public class upload_mb implements Serializable {
         this.file = file;
     }
 
+    
+    public void handleFileUpload(FileUploadEvent event) {
+        FacesMessage message = new FacesMessage("Succesful", event.getFile().getFileName() + " is uploaded.");
+        FacesContext.getCurrentInstance().addMessage(null, message);
+    }
+    
+    
+    
     public void fileUploadListener(FileUploadEvent e) {
         // Get uploaded file from the FileUploadEvent
         this.file = e.getFile();
