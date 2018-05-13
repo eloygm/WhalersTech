@@ -11,24 +11,39 @@ body {
     background-color: #ffffff;
     font-size: 12px;
     font-family: sans-serif;
-    color: #000000;  
+    color: #000000;
     margin: 10px;
+}
+#nav1{
+    background-color: #622599;
+    color: white;
+}
+
+#topLink{
+    color: white;
+}
+#foto{
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 footer{
     background-color: black;
-    position: fixed;
+    color: white;
+    position: static;
     bottom: 0;
     left: 0;
     right: 0;
     height: 35px;
     text-align: center;
 }
-#footer{
-    color: white;
-}
+
 
 
 #top{
-    padding-bottom: 5em;
+    padding-bottom: 6.5em;
 }
