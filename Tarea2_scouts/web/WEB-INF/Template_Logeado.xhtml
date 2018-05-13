@@ -18,6 +18,7 @@
 
         <div id="top">
             <ui:insert name="top">
+                <h:form>
                 <div id="top1">
 
                     <b:navBar brand="Grupo Scout 39 Santo Ángel" brandHref="#" fluid="true" position="top" sticky="true" id="nav1">
@@ -25,12 +26,12 @@
                             <b:navLink value="Inicio" href="#"></b:navLink>
                             <b:navLink value="Perfil" href="#"></b:navLink>
                             <b:dropMenu value="Grupos" iconAwesome="">
-                                <b:navLink value="Castores" href="#"></b:navLink>
-                                <b:navLink value="Manada" href="#"></b:navLink>
-                                <b:navLink value="Tropa" href="#"></b:navLink>
-                                <b:navLink value="Unidad" href="#"></b:navLink>
-                                <b:navLink value="Clan" href="#"></b:navLink>
-                                <b:navLink value="Scouters" href="#"></b:navLink>
+                                <b:navLink value="Castores" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Castores')"></b:navLink>
+                                <b:navLink value="Manada" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Manada')"></b:navLink>
+                                <b:navLink value="Tropa" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Tropa')"></b:navLink>
+                                <b:navLink value="Unidad" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Unidad')"></b:navLink>
+                                <b:navLink value="Clan" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Clan')"></b:navLink>
+                                <b:navLink value="Scouters" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Scouters')"></b:navLink>
 
                             </b:dropMenu>
                             <b:navLink value="Cerrar Sesion" href="#{controlAutorizacion.logout()}"></b:navLink>
@@ -44,6 +45,7 @@
                     </b:navBar>
 
                 </div>
+                </h:form>
             </ui:insert>
         </div>
 
