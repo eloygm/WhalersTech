@@ -240,7 +240,7 @@ a:hover { transition: all 200ms ease-in-out; }
 
 .right_content{
     float: left;
-    width: auto;
+    width: 1024px;
     height: 100%;
     color: #000014;
     font-family: "Segoe UI";

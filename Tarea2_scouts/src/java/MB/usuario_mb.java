@@ -38,13 +38,14 @@ public class usuario_mb {
     private String fileName;
     private Boolean estado;
     private Integer autoincrementado;
-    
+   
     
     private List<Usuario> users;
     
      public usuario_mb() {
         users=new ArrayList();
         autoincrementado = 0;
+       
     }
 
 
@@ -218,6 +219,8 @@ public class usuario_mb {
     public void setUsers(List<Usuario> users) {
         this.users = users;
     }
+
+   
     
     
 }
