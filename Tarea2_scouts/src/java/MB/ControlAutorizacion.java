@@ -37,10 +37,10 @@ public class ControlAutorizacion implements Serializable {
         // Si el usuario es un usuario normal debe devolver la página normal.xhtml
         if(getUsuario() instanceof Administrador){
             
-           return "adminInicio.xhtml";
+           return "adminInicio.xhtml?faces-redirect=true";
             
         } else if(getUsuario() instanceof Usuario){
-            return "indexl.xhtml";
+            return "indexl.xhtml?faces-redirect=true";
         } else if(getUsuario()==null){
             return null;
         } else {
@@ -54,7 +54,7 @@ public class ControlAutorizacion implements Serializable {
         FacesContext ctx = FacesContext.getCurrentInstance();
         ctx.getExternalContext().invalidateSession();
         usuario = null;
-        return "index.xhtml";
+        return "index.xhtml??faces-redirect=true";
     }
 
     /**
