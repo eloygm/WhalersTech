@@ -22,7 +22,7 @@ public class Perfil {
     private String DNI;
     public Perfil() {   
        
-        usuario = new Usuario("PEPE", "CONTRERAS", "FUENTES", "NOSESABEULIO", "23445678T", fecha_alta, fecha_nacimiento);
+        usuario = new Usuario("PEPE", "CONTRERAS", "FUENTES", "CONTRASÑASECRETA", "23445678T", fecha_alta, fecha_nacimiento);
         nombre = usuario.getNombre();
         ap1 = usuario.getApellido1();
         ap2 = usuario.getApellido2();
