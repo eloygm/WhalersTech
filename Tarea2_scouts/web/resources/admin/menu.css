@@ -270,3 +270,9 @@ a:hover { transition: all 200ms ease-in-out; }
  
 }
 
+#filtro {
+    border: 1px solid;
+    border-bottom-color: black;
+    padding-top: 80px;
+}
+
