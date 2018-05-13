@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package MB;
 
 import grupoc.prscouts.*;
 import java.io.File;
@@ -21,7 +21,7 @@ import org.primefaces.PrimeFaces;
 
 /**
  *
- * @author Jose Francisco Enriquez Cueto
+ * @author Cherico
  */
 @Named(value = "usuario_mb")
 @ApplicationScoped
@@ -56,7 +56,7 @@ public class usuario_mb {
    
    
  
-    public void crearUsuario() {
+    public String crearUsuario() {
       
         FacesContext.getCurrentInstance().addMessage(null,
          new FacesMessage(nombre + " " + apellido1 + " registrado correctamente"));
@@ -77,10 +77,12 @@ public class usuario_mb {
         
        users.add(nuevo);
        
+        return null;
        
+     
         }
     
-    public void updateUsuario(){
+    public String updateUsuario(){
         
       ListIterator<Usuario> it = users.listIterator();
         
@@ -100,9 +102,11 @@ public class usuario_mb {
       
         FacesContext.getCurrentInstance().addMessage(null,
          new FacesMessage("Actualizado correctamente"));
+        
+        return null;
     }
     
-    public void deleteUsuario(){
+    public String deleteUsuario(){
         
          ListIterator<Usuario> it = users.listIterator();
         
@@ -116,7 +120,7 @@ public class usuario_mb {
             }
         }
         
-       
+       return "./admin_Usuarios";
     }
 
     public Long getId_usuario() {
