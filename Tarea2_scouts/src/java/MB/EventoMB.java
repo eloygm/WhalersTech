@@ -8,11 +8,13 @@ package MB;
 
 import grupoc.prscouts.Evento;
 import grupoc.prscouts.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
 import java.util.List;
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -23,8 +25,8 @@ import javax.faces.context.FacesContext;
  * @author Francisco Gamez
  */
 @Named(value = "eventoMB")
-@ApplicationScoped
-public class EventoMB {
+@SessionScoped
+public class EventoMB implements Serializable{
 
     /**
      * Creates a new instance of NewJSFManagedBean
