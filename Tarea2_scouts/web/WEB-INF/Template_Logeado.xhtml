@@ -7,9 +7,7 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet name="./css/default.css"/>
-        <h:outputStylesheet name="./css/cssLayout.css"/>
-        <link rel="stylesheet" type="text/css" href="../resources/css/plantillacss.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../resources/css/plantillacss.css" />
         <script src="http://maps.google.com/maps/api/js?key=AIzaSyCGCMZBo4K2KXvDQf6-7EFENkHMjgQ-Z40" type="text/javascript"></script>
         <title>Facelets Template</title>
     </h:head>
@@ -23,15 +21,15 @@
 
                     <b:navBar brand="Grupo Scout 39 Santo Ángel" brandHref="#" fluid="true" position="top" sticky="true" id="nav1">
                         <b:navbarLinks>
-                            <b:navLink value="Inicio" href="#"></b:navLink>
-                            <b:navLink value="Perfil" href="#"></b:navLink>
+                            <b:navLink value="Inicio" href="indexl.xhtml"></b:navLink>
+                            <b:navLink value="Perfil" href="Perfil.xhtml"></b:navLink>
                             <b:dropMenu value="Grupos" iconAwesome="">
-                                <b:navLink value="Castores" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Castores')"></b:navLink>
-                                <b:navLink value="Manada" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Manada')"></b:navLink>
-                                <b:navLink value="Tropa" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Tropa')"></b:navLink>
-                                <b:navLink value="Unidad" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Unidad')"></b:navLink>
-                                <b:navLink value="Clan" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Clan')"></b:navLink>
-                                <b:navLink value="Scouters" href="./grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Scouters')"></b:navLink>
+                                <b:navLink value="Castores" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Castores')"></b:navLink>
+                                <b:navLink value="Manada" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Manada')"></b:navLink>
+                                <b:navLink value="Tropa" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Tropa')"></b:navLink>
+                                <b:navLink value="Unidad" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Unidad')"></b:navLink>
+                                <b:navLink value="Clan" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Clan')"></b:navLink>
+                                <b:navLink value="Scouters" href="grupetes.xhtml" onclick="ajax:calendarBean.seteandoGrupo('Scouters')"></b:navLink>
 
                             </b:dropMenu>
                             <b:navLink value="Cerrar Sesion" href="#{controlAutorizacion.logout()}"></b:navLink>
