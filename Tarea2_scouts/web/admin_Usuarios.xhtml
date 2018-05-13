@@ -40,7 +40,7 @@
                     </p:column>
                     
                     <p:column headerText="Borrar">
-                        <h:outputText value="#{usuario_mb}" />
+                        <p:commandButton icon="ui-icon-circle-close" action="#{usuario_mb.deleteUsuario(usuario)}" />
                     </p:column>
                 </p:dataTable>
 

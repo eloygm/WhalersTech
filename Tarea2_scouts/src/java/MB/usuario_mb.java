@@ -104,7 +104,7 @@ public class usuario_mb {
         return null;
     }
     
-    public String deleteUsuario(){
+    public String deleteUsuario(Usuario us){
         
          ListIterator<Usuario> it = users.listIterator();
         
@@ -112,13 +112,13 @@ public class usuario_mb {
          
         Boolean borrado = false;
         while(!borrado || it.hasNext() ){
-            if(it.next().getId().equals(id_usuario)){
+            if(it.next().getId().equals(us.getId())){
                 users.remove(it.next());
                 borrado = true;
             }
         }
         
-       return "./admin_Usuarios";
+       return "admin_Usuarios.xhtml?face-redirect=true";
     }
 
     public Long getId_usuario() {
@@ -215,10 +215,5 @@ public class usuario_mb {
 
     public void setUsers(List<Usuario> users) {
         this.users = users;
-    }
-    
-    public void deleteUser(Usuario us){
-        
     }    
-    
 }
