@@ -14,3 +14,5 @@ prScoutsJSF/nbproject/private/private.properties
 *.properties
 *.properties
 *.properties
+/Tarea3_Scouts/nbproject/private/
+*.properties
