@@ -22,7 +22,7 @@ import javax.faces.bean.ViewScoped;
 
 @ManagedBean
 
-@ApplicationScoped
+@ViewScoped
 
 public class CalendarBean {
 
